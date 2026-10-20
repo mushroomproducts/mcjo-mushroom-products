@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MCJO Mushroom Products</title>
+
+https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fafafa;
+color:#333;
+}
+
+header{
+background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+url('https://images.unsplash.com/photo-1511919884226-fd3cad34687c');
+background-size:cover;
+background-position:center;
+height:100vh;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 30px;
+background:#4CAF50;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#2e7d32;
+}
+
+nav{
+position:sticky;
+top:0;
+background:white;
+z-index:999;
+display:flex;
+justify-content:center;
+padding:15px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+nav a{
+margin:0 15px;
+text-decoration:none;
+color:#2e7d32;
+font-weight:600;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:2.5rem;
+color:#2e7d32;
+margin-bottom:40px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+}
+
+.search-container{
+text-align:center;
+margin-bottom:30px;
+}
+
+.search-container input{
+padding:12px;
+width:300px;
+border:1px solid #ccc;
+border-radius:10px;
+}
+
+.categories{
+text-align:center;
+margin-bottom:30px;
+}
+
+.categories button{
+padding:10px 15px;
+margin:5px;
+border:none;
+background:#e8f5e9;
+cursor:pointer;
+border-radius:8px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.price{
+font-size:1.4rem;
+font-weight:bold;
+color:#d32f2f;
+margin:10px 0;
+}
+
+.cart-section{
+background:#f5f5f5;
+}
+
+.cart-box{
+background:white;
+padding:25px;
+border-radius:15px;
+}
+
+.checkout-form{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+margin-top:25px;
+}
+
+.checkout-form input,
+.checkout-form select{
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.shipping{
+background:#e8f5e9;
+}
+
+.policy{
+background:white;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.7);
+justify-content:center;
+align-items:center;
+}
+
+.modal-content{
+background:white;
+padding:30px;
+border-radius:15px;
+text-align:center;
+max-width:500px;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:2.5rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.checkout-form{
+grid-template-columns:1fr;
+}
+
+nav{
+flex-wrap:wrap;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="hero-content">
+<h1>MCJO Mushroom Products</h1>
+<p>
+Fresh, Healthy, and Locally Produced Mushroom Products
+from Paniqui, Tarlac.
+</p>
+#productsShop Now</a>
+</div>
+</header>
+
+<nav>
+#aboutFarm Story</a>
+#productsProducts</a>
+#cartCart</a>
+#shippingShipping</a>
+</nav>
+
+<section id="about">
+
+<h2 class="section-title">Our Farm Story</h2>
+
+<div class="about">
+
+https://images.unsplash.com/photo-1501004318641-b39e6451bec6
+
+<div>
+<h3>Since 2020</h3>
+
+<br>
+
+<p>
+MCJO Mushroom Products is a homegrown mushroom enterprise located
+at 616 Riverside, Carino, Paniqui, Tarlac, Philippines.
+</p>
+
+<br>
+
+<p>
+We specialize in transforming fresh oyster mushrooms into nutritious,
+value-added products that Filipino families can enjoy every day.
+</p>
+
+<br>
+
+<p>
+Our mission is to provide healthy, affordable, and delicious mushroom
+products while supporting local agriculture and sustainable food
+production.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<h2 class="section-title">Product Catalog</h2>
+
+<div class="search-container">
+<input type="text" id="searchInput" placeholder="Search Products..." onkeyup="searchProducts()">
+</div>
+
+<div class="categories">
+<button onclick="filterCategory('all')">All</button>
+<button onclick="filterCategory('food')">Food Products</button>
+<button onclick="filterCategory('farm')">Farm Supplies</button>
+</div>
+
+<div class="products">
+
+<div class="card product food">
+https://images.unsplash.com/photo-1473093295043-cdd812d0e601
+<div class="card-content">
+<h3>Mushroom Chili Paste</h3>
+<p>200g | Rich spicy mushroom spread</p>
+<p class="price">₱150</p>
+<button class="btn" onclick="addToCart('Mushroom Chili Paste',150)">Add to Cart</button>
+</div>
+</div>
+
+<div class="card product food">
+https://images.unsplash.com/photo-1547592180-85f173990554
+<div class="card-content">
+<h3>Mushroom Chicken Pastil</h3>
+<p>200g | Ready-to-eat meal</p>
+<p class="price">₱150</p>
+<button class="btn" onclick="addToCart('Mushroom Chicken Pastil',150)">Add to Cart</button>
+</div>
+</div>
+
+<div class="card product food">
+https://images.unsplash.com/photo-1599490659213-e2b9527bd087
+<div class="card-content">
+<h3>Mushroom Chicharon (100g)</h3>
+<p>6 Delicious Flavors</p>
+<p class="price">₱90</p>
+<button class="btn" onclick="addToCart('Mushroom Chicharon 100g',90)">Add to Cart</button>
+</div>
+</div>
+
+<div class="card product food">
+https://images.unsplash.com/photo-1599490659213-e2b9527bd087
+<div class="card-content">
+<h3>Mushroom Chicharon (50g)</h3>
+<p>6 Delicious Flavors</p>
+<p class="price">₱50</p>
+<button class="btn" onclick="addToCart('Mushroom Chicharon 50g',50)">Add to Cart</button>
+</div>
+</div>
+
+<div class="card product farm">
+https://images.unsplash.com/photo-1464226184884-fa280b87c399
+<div class="card-content">
+<h3>White Oyster Mushroom Fruiting Bag</h3>
+<p>Premium Growing Bag</p>
+<p class="price">₱50</p>
+<button class="btn" onclick="addToCart('Fruiting Bag',50)">Add to Cart</button>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="cart" class="cart-section">
+
+<h2 class="section-title">Shopping Cart</h2>
+
+<div class="cart-box">
+
+<ul id="cartItems"></ul>
+
+<br>
+
+<h3>Total: ₱<span id="total">0</span></h3>
+
+<div class="checkout-form">
+
+<input type="text" placeholder="Full Name" required>
+<input type="text" placeholder="Contact Number" required>
+<input type="text" placeholder="Delivery Address" required>
+
+<select>
+<option>Cash on Delivery</option>
+<option>GCash</option>
+<option>Maya</option>
+<option>Bank Transfer</option>
+</select>
+
+</div>
+
+<button class="btn" onclick="checkout()">
+Place Order
+</button>
+
+</div>
+
+</section>
+
+<section id="shipping" class="shipping">
+
+<h2 class="section-title">Shipping & Freshness Strategy</h2>
+
+<div class="policy">
+<h3>Freshness Guarantee</h3>
+<p>
+Products are carefully prepared and packed to maintain quality.
+Items requiring refrigeration should be refrigerated immediately
+upon receipt.
+</p>
+</div>
+
+<div class="policy">
+<h3>Delivery Options</h3>
+<ul>
+<li>Local Pickup - Paniqui, Tarlac</li>
+<li>Courier Delivery</li>
+<li>Nationwide Shipping</li>
+<li>Estimated Delivery: 2-5 Business Days</li>
+</ul>
+</div>
+
+<div class="policy">
+<h3>Refund Policy</h3>
+<p>
+Customers may request replacement or refund within
+24 hours of receiving damaged or incorrect items
+with photo proof and order details.
+</p>
+</div>
+
+</section>
+
+<footer>
+
+<h3>MCJO Mushroom Products</h3>
+
+<p>
+616 Riverside, Carino, Paniqui, Tarlac, Philippines
+</p>
+
+<p>
+Serving Quality Mushroom Products Since 2020
+</p>
+
+</footer>
+
+<div class="modal" id="orderModal">
+<div class="modal-content">
+<h2>Order Confirmed!</h2>
+<p>
+Thank you for shopping with MCJO Mushroom Products.
+</p>
+<br>
+<button class="btn" onclick="closeModal()">
+Close
+</button>
+</div>
+</div>
+
+<script>
+
+let total = 0;
+
+function addToCart(product, price){
+
+let item = document.createElement("li");
+item.innerHTML = product + " - ₱" + price;
+
+document.getElementById("cartItems")
+.appendChild(item);
+
+total += price;
+
+document.getElementById("total")
+.innerText = total;
+}
+
+function checkout(){
+
+document.getElementById("orderModal")
+.style.display="flex";
+}
+
+function closeModal(){
+
+document.getElementById("orderModal")
+.style.display="none";
+}
+
+function searchProducts(){
+
+let input =
+document.getElementById("searchInput")
+.value.toLowerCase();
+
+let products =
+document.querySelectorAll(".product");
+
+products.forEach(product => {
+
+let text =
+product.textContent.toLowerCase();
+
+product.style.display =
+text.includes(input) ? "block" : "none";
+
+});
+
+}
+
+function filterCategory(category){
+
+let products =
+document.querySelectorAll('.product');
+
+products.forEach(product=>{
+
+if(category==='all'){
+product.style.display='block';
+}
+else if(product.classList.contains(category)){
+product.style.display='block';
+}
+else{
+product.style.display='none';
+}
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
